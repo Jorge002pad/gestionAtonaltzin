@@ -4,7 +4,6 @@ export class Cabana1{
     Descripcion:string;
     PrecioPorNoche: number;
     Capacidad: number;
-    Ubicacion: string;
 
     constructor() {
         this. ID_Cabana = 0;
@@ -12,6 +11,5 @@ export class Cabana1{
         this.Descripcion = '';
         this.PrecioPorNoche = 0;
         this.Capacidad = 2;
-        this.Ubicacion = 'Carretera Teotongo sin #, Villa de Tamazulapm del progreso, Oaxaca';
     }
 }
