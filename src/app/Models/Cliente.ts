@@ -9,11 +9,11 @@ export class Cliente{
 
     constructor() {
         this. ID_Cliente = 0;
-        this.Nombre = '';
-        this.Apellido = '';
-        this.Email = 'marcos@gmail.com';
+        this.Nombre = 'Jorge';
+        this.Apellido = 'Padilla';
+        this.Email = 'jorgepad002@gmail.com';
         this.password1 = 'hola';
-        this.Telefono = '';
-        this.tipo = 'usuario';
+        this.Telefono = '123456789';
+        this.tipo = 'administrador';
     }
 }

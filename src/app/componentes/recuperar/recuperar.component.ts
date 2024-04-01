@@ -10,19 +10,23 @@ declare var $: any;
   templateUrl: './recuperar.component.html',
   styleUrls: ['./recuperar.component.css']
 })
-export class RecuperarComponent{
+export class RecuperarComponent {
   cliente = new Cliente()
 
-  constructor(private correoService: CorreoService, private clienteService : ClienteService , private router: Router) { }
+  constructor(private correoService: CorreoService, private clienteService: ClienteService, private router: Router) { }
 
   ngOnInit(): void {
   }
-cambiarContrasenya()
-{
-this.correoService.enviarCorreoRecuperarContrasenya(this.cliente).subscribe((resUsuario: any) =>
-{
-console.log(resUsuario);
-},err => console.error(err));
-}
-
+  cambiarContrasenya() {
+    console.log(this.cliente.Email);
+    
+    this.correoService.enviarCorreoRecuperarContrasenya(this.cliente).subscribe((resUsuario: any) => {
+      console.log(resUsuario);
+    }, err => console.error(err));
+  }
+  prueba(){
+    console.log("Funcion de prueba");
+    
+  }
+    
 }
